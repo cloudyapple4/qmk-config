@@ -60,24 +60,30 @@ bool get_hold_on_other_key_press(uint16_t keycode, keyrecord_t *record) {
 
 // Combos
 enum combos {
-    GC_LBRC,
-    CR_RBRC,
-    HT_LPRN,
-    TN_RPRN,
+    EU_LPRN,
+    HT_RPRN,
+    OE_LBRC,
+    TN_RBRC,
+    DOTCOM_LCBR,
+    CR_RCBR,
     MW_SLSH
 };
 
-const uint16_t PROGMEM gc_combo[] = {KC_G, KC_C, COMBO_END};
-const uint16_t PROGMEM cr_combo[] = {KC_C, KC_R, COMBO_END};
+const uint16_t PROGMEM eu_combo[] = {KC_E, KC_U, COMBO_END};
 const uint16_t PROGMEM ht_combo[] = {KC_H, KC_T, COMBO_END};
+const uint16_t PROGMEM oe_combo[] = {KC_O, KC_E, COMBO_END};
 const uint16_t PROGMEM tn_combo[] = {KC_T, KC_N, COMBO_END};
+const uint16_t PROGMEM dotcom_combo[] = {KC_DOT, KC_COMM, COMBO_END};
+const uint16_t PROGMEM cr_combo[] = {KC_C, KC_R, COMBO_END};
 const uint16_t PROGMEM mw_combo[] = {KC_M, RALT_T(KC_W), COMBO_END};
 
 combo_t key_combos[] = {
-    [GC_LBRC] = COMBO(gc_combo, KC_LBRC),
-    [CR_RBRC] = COMBO(cr_combo, KC_RBRC),
-    [HT_LPRN] = COMBO(ht_combo, KC_LPRN),
-    [TN_RPRN] = COMBO(tn_combo, KC_RPRN),
+    [EU_LPRN] = COMBO(eu_combo, KC_LPRN),
+    [HT_RPRN] = COMBO(ht_combo, KC_RPRN),
+    [OE_LBRC] = COMBO(oe_combo, KC_LBRC),
+    [TN_RBRC] = COMBO(tn_combo, KC_RBRC),
+    [DOTCOM_LCBR] = COMBO(dotcom_combo, KC_LCBR),
+    [CR_RCBR] = COMBO(cr_combo, KC_RCBR),
     [MW_SLSH] = COMBO(mw_combo, KC_SLSH)
 };
 
