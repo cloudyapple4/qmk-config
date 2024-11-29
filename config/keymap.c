@@ -20,7 +20,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [LOWER] = LAYOUT_split_3x5_2(
 	KC_F1,             KC_F2,            KC_F3,          KC_F4,              KC_F5,           KC_PSCR,         XXXXXXX,           XXXXXXX,          KC_ESC,           KC_DEL, 
-	KC_F6,             KC_F7,            KC_F8,          KC_F9,              KC_F10,          KC_LEFT,         KC_DOWN,           KC_UP,            KC_RIGHT,         CW_TOGG,
+	KC_F6,             KC_F7,            KC_F8,          KC_F9,              KC_F10,          KC_LEFT,         KC_DOWN,           KC_UP,            KC_RIGHT,         XXXXXXX,
 	KC_F11,            KC_F12,           XXXXXXX,        XXXXXXX,            XXXXXXX,         KC_HOME,         KC_PGDN,           KC_PGUP,          KC_END,           XXXXXXX,
 	                                                     _______,            _______,         KC_LGUI,         _______
     ),
@@ -28,7 +28,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [RAISE] = LAYOUT_split_3x5_2(
 	KC_0,              KC_1,             KC_2,           KC_3,               KC_AMPR,         KC_BSLS,         KC_AT,             KC_ASTR,          KC_CIRC,          KC_DLR, 
 	KC_PERC,           KC_4,             KC_5,           KC_6,               KC_PIPE,         KC_TILD,         KC_EQL,            KC_MINS,          KC_PLUS,          KC_GRV,
-	KC_HASH,           KC_7,             KC_8,           KC_9,               KC_EXLM,         XXXXXXX,         KC_UNDS,           XXXXXXX,          XXXXXXX,          XXXXXXX,
+	KC_HASH,           KC_7,             KC_8,           KC_9,               KC_EXLM,         XXXXXXX,         KC_UNDS,           CW_TOGG,          XXXXXXX,          XXXXXXX,
 	                                                     _______,            _______,         _______,         _______
     ),
 
