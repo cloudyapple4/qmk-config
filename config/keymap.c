@@ -14,7 +14,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [DEFAULT] = LAYOUT_split_3x5_2(
 	KC_QUOTE,          KC_COMMA,         KC_DOT,         KC_P,               KC_Y,            KC_F,            KC_G,              KC_C,             KC_R,             KC_L, 
 	KC_A,              KC_O,             KC_E,           KC_U,               KC_I,            KC_D,            KC_H,              KC_T,             KC_N,             KC_S,
-	LSFT_T(KC_SCLN),   LCTL_T(KC_Q),     LALT_T(KC_J),   KC_K,               KC_X,            KC_B,            KC_M,              RALT_T(KC_W),     RCTL_T(KC_V),     RSFT_T(KC_Z),
+	LSFT_T(KC_SCLN),   LCTL_T(KC_Q),     LALT_T(KC_J),   GUI_T(KC_K),        KC_X,            KC_B,            GUI_T(KC_M),       RALT_T(KC_W),     RCTL_T(KC_V),     RSFT_T(KC_Z),
 	                                                     LT(LOWER, KC_ENT),  KC_SPC,          KC_BSPC,         LT(RAISE, KC_TAB)
     ),
 
@@ -75,7 +75,7 @@ const uint16_t PROGMEM oe_combo[] = {KC_O, KC_E, COMBO_END};
 const uint16_t PROGMEM tn_combo[] = {KC_T, KC_N, COMBO_END};
 const uint16_t PROGMEM dotcom_combo[] = {KC_DOT, KC_COMM, COMBO_END};
 const uint16_t PROGMEM cr_combo[] = {KC_C, KC_R, COMBO_END};
-const uint16_t PROGMEM mw_combo[] = {KC_M, RALT_T(KC_W), COMBO_END};
+const uint16_t PROGMEM mw_combo[] = {GUI_T(KC_M), RALT_T(KC_W), COMBO_END};
 
 combo_t key_combos[] = {
     [EU_LPRN] = COMBO(eu_combo, KC_LPRN),
