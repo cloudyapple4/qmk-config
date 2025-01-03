@@ -86,13 +86,3 @@ combo_t key_combos[] = {
     [CR_RCBR] = COMBO(cr_combo, KC_RCBR),
     [MW_SLSH] = COMBO(mw_combo, KC_SLSH)
 };
-
-// Custom Combo Term
-uint16_t get_combo_term(uint16_t index, combo_t *combo) {
-    switch (index) {
-	case MW_SLSH:
-	    return 20;
-    }
-    return COMBO_TERM;
-};
-

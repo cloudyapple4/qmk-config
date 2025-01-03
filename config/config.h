@@ -7,7 +7,7 @@
 #define HOLD_ON_OTHER_KEY_PRESS_PER_KEY
 
 // Combos
-#define COMBO_TERM 10
+#define COMBO_TERM 20
 
 // Caps Word
 #define CAPS_WORD_INVERT_ON_SHIFT
