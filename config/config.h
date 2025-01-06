@@ -4,6 +4,7 @@
 #define TAPPING_TERM 200
 #define PERMISSIVE_HOLD
 #define RETRO_TAPPING
+#define DUMMY_MOD_NEUTRALIZER_KEYCODE KC_F18
 #define HOLD_ON_OTHER_KEY_PRESS_PER_KEY
 
 // Combos
@@ -11,4 +12,3 @@
 
 // Caps Word
 #define CAPS_WORD_INVERT_ON_SHIFT
-
