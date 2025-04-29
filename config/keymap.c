@@ -58,6 +58,7 @@ bool get_hold_on_other_key_press(uint16_t keycode, keyrecord_t *record) {
     }
 };
 
+// Disable quick tap term for layer keys
 uint16_t get_quick_tap_term(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
         case LT(LOWER, KC_ENT):
@@ -65,6 +66,24 @@ uint16_t get_quick_tap_term(uint16_t keycode, keyrecord_t *record) {
             return 0;
         default:
             return QUICK_TAP_TERM;
+    }
+}
+
+// Send dummy key before release of ALT and GUI
+bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+    switch (keycode) {
+        case ALT_T(KC_J):
+        case ALT_T(KC_W):
+        case GUI_T(KC_K):
+        case GUI_T(KC_M):
+            if (!record->event.pressed) {
+                if (!record->tap.count) {
+                    tap_code(KC_F18);
+                }
+            }
+            return true;
+        default:
+            return true;
     }
 }
 
