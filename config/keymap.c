@@ -33,7 +33,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
 
     [ADJUST] = LAYOUT_split_3x5_2(
-	XXXXXXX,           XXXXXXX,          KC_BRIU,        KC_BRID,            XXXXXXX,         QK_BOOT,         XXXXXXX,           XXXXXXX,          XXXXXXX,          XXXXXXX, 
+	XXXXXXX,           XXXXXXX,          KC_BRIU,        KC_BRID,            XXXXXXX,         QK_BOOT,         XXXXXXX,           XXXXXXX,          XXXXXXX,          KC_PWR, 
 	XXXXXXX,           KC_MUTE,          KC_VOLU,        KC_VOLD,            XXXXXXX,         QK_RBT,          XXXXXXX,           XXXXXXX,          XXXXXXX,          XXXXXXX,
 	XXXXXXX,           XXXXXXX,          XXXXXXX,        XXXXXXX,            XXXXXXX,         XXXXXXX,         XXXXXXX,           XXXXXXX,          XXXXXXX,          XXXXXXX,
 	                                                     _______,            _______,         _______,         _______
