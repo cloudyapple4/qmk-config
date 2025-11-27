@@ -78,7 +78,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case GUI_T(KC_M):
             if (!record->event.pressed) {
                 if (!record->tap.count) {
-                    tap_code(KC_F18);
+                    tap_code(KC_RCTL);
                 }
             }
             return true;
